@@ -12,8 +12,8 @@ class GetInfoView(View):
     def get(self, request):
         slack_name = request.GET.get('slack_name')
         track = request.GET.get('track')
-        file_name = 'HNG_1'  
-        repo_url = 'https://github.com/abdulmalikadebayo/HNG_X'  
+        github_file_url = 'https://github.com/abdulmalikadebayo/HNG_X/tree/main/HNG_1'  
+        github_repo_url = 'https://github.com/abdulmalikadebayo/HNG_X'  
 
         # current day of the week and UTC time
         current_day = datetime.datetime.now().strftime('%A')
@@ -34,8 +34,8 @@ class GetInfoView(View):
             "current_day": current_day,
             "utc_time": utc_time,
             "track": track,
-            "github_file_url": f"{repo_url}/blob/main/{file_name}",
-            "github_repo_url": repo_url,
+            "github_file_url": github_file_url,
+            "github_repo_url": github_repo_url,
             "status_code": status_code
         }
 
