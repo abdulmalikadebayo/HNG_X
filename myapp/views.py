@@ -5,7 +5,7 @@ from django.http import JsonResponse
 from django.views import View
 import datetime
 
-class GetInfoView(View):
+class task1(View):
     def get(self, request):
         slack_name = request.GET.get('slack_name')
         track = request.GET.get('track')

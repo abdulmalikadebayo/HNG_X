@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import GetInfoView
+from .views import task1
 
 urlpatterns = [
-    path('get_info/', GetInfoView.as_view(), name='get_info'),
+    path('api/', task1.as_view(), name='api'),
 ]
