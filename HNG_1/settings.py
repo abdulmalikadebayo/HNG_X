@@ -34,7 +34,7 @@ if RENDER_EXTERNAL_HOSTNAME:    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 # Application definition
 
 INSTALLED_APPS = [
-    'myapp',
+    'myapp.wsgi',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
