@@ -3,6 +3,8 @@ distlib==0.3.7
 Django==4.2.4
 filelock==3.12.3
 freegames==2.3.2
+gunicorn==21.2.0
+packaging==23.1
 platformdirs==3.10.0
 sqlparse==0.4.4
 typing_extensions==4.7.1
